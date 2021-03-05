@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Connection: Connecting me</title>
+    <title>Connection: what's happening neighbourhood?</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
@@ -37,6 +37,10 @@
             color: #fff;
             padding: 100px 25px;
             font-family: Montserrat, sans-serif;
+        }
+
+        #launching {
+            color: #FF6937;
         }
 
         .container-fluid {
@@ -249,112 +253,159 @@
 <div class="jumbotron text-center">
     <h1>Connection</h1>
     <p>Connecting people around you.</p>
-    <h4>Lauching this sunday.</h4>
+    <h4 id="launching">Lauching this sunday.</h4>
 </div>
 
 <!-- Container (About Section) -->
+
 <div id="about" class="container-fluid">
     <div class="row">
         <div class="col-sm-8">
+            <div class="alert alert-info alert-dismissible">
+                <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+                <strong>Info!</strong> Connection is live from 7th March midnight.
+            </div>
             <h2>About Connection</h2><br>
             <h4> Its the next gen Social network platform that focuses on the keeping the real life connection alive,
                 and eliminating
                 the blue screen.</h4><br>
-            <p>
-                something interesting XOXO
-                <blockquote class="blockquote">
-            <p> The average American hasn’t made a new friend in five years, a new study has revealed.
-                According to research into the social dynamics of 2,000 Americans, 45 per cent of adults find it
-                difficult to
-                make new friends.
-            </p>
-            <footer><a
-                    href="http://independent.co.uk/life-style/friends-adults-american-how-friendship-difficulty-a8906861.html">independent.co.uk/life-style/friends-adults-american-how-friendship-difficulty-a8906861.html</a>
-            </footer>
-            </blockquote>
-            </p>
-            <br>
-            <button class="btn btn-default btn-lg" data-toggle="collapse" data-target="#demo">Case Studies
+
+
+            <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#link">case studies
             </button>
-            <div id="demo" class="collapse in">
-                <iframe width="806" height="453" src="https://www.youtube.com/embed/6DIeL4-wwBo" frameborder="0"
+            <br>
+            <div id="link" class="collapse in">
+                <blockquote class="blockquote">
+                    <p> The average American hasn’t made a new friend in five years, a new study has revealed.
+                        According to research into the social dynamics of 2,000 Americans, 45 per cent of adults find it
+                        difficult to
+                        make new friends.
+                    </p>
+                    <footer>
+                        <a data-toggle="tooltip" title="click me!"
+                           href="http://independent.co.uk/life-style/friends-adults-american-how-friendship-difficulty-a8906861.html">independent.co.uk/life-style/friends-adults-american-how-friendship-difficulty-a8906861.html</a>
+                    </footer>
+                </blockquote>
+                <blockquote class="blockquote">
+                    <p> Almost 40% of girls who spend more than five hours a day on social media show symptoms of
+                        depression</p>
+                    <footer>
+                        <a data-toggle="tooltip" title="me too!"
+                           href="https://interactive.guim.co.uk/charts/embed/jan/2019-01-04T13:03:38/embed.html">https://interactive.guim.co.uk/charts/embed/jan/2019-01-04T13:03:38/embed.html</a>
+                    </footer>
+                </blockquote>
+
+                <blockquote class="blockquote">
+                    <p> Millennials are the loneliest generation</p>
+                    <footer>
+                        <a data-toggle="tooltip" title="do i have to say now!"
+                           href="https://today.yougov.com/topics/lifestyle/articles-reports/2019/07/30/loneliness-friendship-new-friends-poll-survey">https://today.yougov.com/topics/lifestyle/articles-reports/2019/07/30/loneliness-friendship-new-friends-poll-survey</a>
+                    </footer>
+                </blockquote>
+            </div>
+            <br>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-5">
+            <div class="embed-responsive embed-responsive-16by9">
+                <iframe src="https://www.youtube.com/embed/6DIeL4-wwBo" frameborder="0"
                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                         allowfullscreen></iframe>
-                <iframe width="806" height="453" src="https://www.youtube.com/embed/0EFHbruKEmw" frameborder="0"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                        allowfullscreen></iframe>
-                <iframe width="806" height="453" src="https://www.youtube.com/embed/mAQtbTqDefw?list=LL" frameborder="0"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                        allowfullscreen></iframe>
-                <iframe width="806" height="455" src="https://www.youtube.com/embed/QN11E74HIOE?list=LL" frameborder="0"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                        allowfullscreen></iframe>
-                <iframe width="806" height="505" src="https://www.youtube.com/embed/i5m-sgtwFck?list=LL" frameborder="0"
+            </div>
+        </div>
+        <div class="col-md-5">
+            <div class="embed-responsive embed-responsive-16by9">
+                <iframe src="https://www.youtube.com/embed/0EFHbruKEmw" frameborder="0"
                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                         allowfullscreen></iframe>
             </div>
         </div>
     </div>
-</div>
-
-
-<!-- Container (Contact Section) -->
-<div id="contact" class="container-fluid bg-grey">
-    <h2 class="text-center">CONTACT</h2>
+    <br><br>
     <div class="row">
-        <div class="col-sm-5">
-            <p>Contact us and we'll get back to you within 24 hours.</p>
-            <p><span class="glyphicon glyphicon-map-marker"></span> New Delhi, INDIA</p>
-            <p><span class="glyphicon glyphicon-phone"></span> +91 9315730398</p>
-            <p><span class="glyphicon glyphicon-envelope"></span> nerajshr@icloud.com || connect.nerajshr@gmail.com</p>
+        <div class="col-md-5">
+            <div class="embed-responsive embed-responsive-16by9">
+                <iframe src="https://www.youtube.com/embed/mAQtbTqDefw?list=LL" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+            </div>
+        </div>
+
+        <div class="col-md-5">
+            <div class="embed-responsive embed-responsive-16by9">
+                <iframe src="https://www.youtube.com/embed/QN11E74HIOE?list=LL" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+            </div>
         </div>
     </div>
-</div>
+    <br><br>
 
-<!-- Image of location/map -->
-<footer class="container-fluid text-center">
-    <a href="#myPage" title="To Top">
-        <span class="glyphicon glyphicon-chevron-up"></span>
-    </a>
-    <p>Thanks for Visiting</p>
-</footer>
 
-<script>
-    $(document).ready(function () {
-        // Add smooth scrolling to all links in navbar + footer link
-        $(".navbar a, footer a[href='#myPage']").on('click', function (event) {
-            // Make sure this.hash has a value before overriding default behavior
-            if (this.hash !== "") {
-                // Prevent default anchor click behavior
-                event.preventDefault();
+    <!-- Container (Contact Section) -->
+    <div id="contact" class="container-fluid bg-grey">
+        <h2 class="text-center">CONTACT</h2>
+        <div class="row">
+            <div class="col-sm-5">
+                <p>Contact us and we'll get back to you within 24 hours.</p>
+                <p><span class="glyphicon glyphicon-map-marker"></span> New Delhi, INDIA</p>
+                <p><span class="glyphicon glyphicon-phone"></span>whatsapp@ +919315730398</p>
+                <p><span class="glyphicon glyphicon-envelope"></span> nerajshr@icloud.com</p>
+            </div>
+        </div>
+    </div>
 
-                // Store hash
-                var hash = this.hash;
+    <!-- Image of location/map -->
+    <footer class="container-fluid text-center">
+        <a href="#myPage" title="To Top">
+            <span class="glyphicon glyphicon-chevron-up"></span>
+        </a>
+        <p>Thanks for Visiting</p>
+    </footer>
 
-                // Using jQuery's animate() method to add smooth page scroll
-                // The optional number (900) specifies the number of milliseconds it takes to scroll to the specified area
-                $('html, body').animate({
-                    scrollTop: $(hash).offset().top
-                }, 900, function () {
+    <script>
 
-                    // Add hash (#) to URL when done scrolling (default click behavior)
-                    window.location.hash = hash;
-                });
-            } // End if
+        $(document).ready(function () {
+            $('[data-toggle="tooltip"]').tooltip();
         });
 
-        $(window).scroll(function () {
-            $(".slideanim").each(function () {
-                var pos = $(this).offset().top;
+        $(document).ready(function () {
+            // Add smooth scrolling to all links in navbar + footer link
+            $(".navbar a, footer a[href='#myPage']").on('click', function (event) {
+                // Make sure this.hash has a value before overriding default behavior
+                if (this.hash !== "") {
+                    // Prevent default anchor click behavior
+                    event.preventDefault();
 
-                var winTop = $(window).scrollTop();
-                if (pos < winTop + 600) {
-                    $(this).addClass("slide");
-                }
+                    // Store hash
+                    var hash = this.hash;
+
+                    // Using jQuery's animate() method to add smooth page scroll
+                    // The optional number (900) specifies the number of milliseconds it takes to scroll to the specified area
+                    $('html, body').animate({
+                        scrollTop: $(hash).offset().top
+                    }, 900, function () {
+
+                        // Add hash (#) to URL when done scrolling (default click behavior)
+                        window.location.hash = hash;
+                    });
+                } // End if
             });
-        });
-    })
-</script>
+
+            $(window).scroll(function () {
+                $(".slideanim").each(function () {
+                    var pos = $(this).offset().top;
+
+                    var winTop = $(window).scrollTop();
+                    if (pos < winTop + 600) {
+                        $(this).addClass("slide");
+                    }
+                });
+            });
+        })
+    </script>
 
 </body>
 </html>
